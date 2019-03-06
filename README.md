@@ -30,6 +30,8 @@ flights_df[(flights_df['ArrDelay']>0) & (flights_df['DepDelay']>0)].groupby(['Un
   
 train['Age'].hist(bins=30,color='darkred',alpha=0.7)
 
+sns.pairplot(ad_data,hue='Clicked on Ad',palette='bwr')
+
 sns.countplot(x='SibSp',data=train)
 
 train.drop(['Sex','Embarked'],axis=1,inplace=True)
