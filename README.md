@@ -3,9 +3,13 @@
 Borrador personal de código
 
 import pandas as pd
+
 import numpy as np
+
 import matplotlib.pyplot as plt
+
 import seaborn as sns
+
 %matplotlib inline
 
 df.groupby('twp').size().sort_values(ascending=False).iloc[:5]
