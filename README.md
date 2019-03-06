@@ -84,3 +84,6 @@ NewDF=pd.merge(DF , TempDF, how='inner', on='ShopName')
 !pip install numpy==1.16.1
 
 count_nonzero(A) / A.size
+
+dmap = {0:'Mon',1:'Tue',2:'Wed',3:'Thu',4:'Fri',5:'Sat',6:'Sun'}
+df['Day of week'] = df['Day of week'].map(dmap)
